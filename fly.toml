@@ -1,0 +1,26 @@
+# fly.toml app configuration file generated for yumeng-chatgpt on 2024-05-21T07:33:21+08:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'yumeng-chatgpt'
+primary_region = 'hkg'
+
+[build]
+
+[env]
+  BASE_URL = 'https://dzqc.link/'
+  CODE = '**..**'
+  HIDE_USER_API_KEY = '1'
+  OPENAI_API_KEY = 'sk-4Dn57WM1JqYVOrJwEfF094Cd6b4f4d819d537aDf2aF53d71'
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = false
+  min_machines_running = 1
+  processes = ['app']
+
+[[vm]]
+  size = 'shared-cpu-1x'

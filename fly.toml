@@ -10,9 +10,7 @@ primary_region = 'hkg'
 
 [env]
   BASE_URL = 'https://dzqc.link/'
-  CODE = '**..**'
   HIDE_USER_API_KEY = '1'
-  OPENAI_API_KEY = 'sk-4Dn57WM1JqYVOrJwEfF094Cd6b4f4d819d537aDf2aF53d71'
 
 [http_service]
   internal_port = 3000
